@@ -5,9 +5,9 @@ set -euo pipefail
 
 WINDOW_NAME="$1"
 
-if ! tmux has-session -t shepherd 2>/dev/null; then
-  echo "ERROR: shepherd session not running" >&2
+if ! tmux has-session -t sauron 2>/dev/null; then
+  echo "ERROR: sauron session not running" >&2
   exit 1
 fi
 
-tmux capture-pane -t "shepherd:$WINDOW_NAME" -p -S -50
+tmux capture-pane -t "sauron:$WINDOW_NAME" -p -S -50
