@@ -7,7 +7,7 @@ A persistent Claude Code orchestrator that runs on your laptop 24/7. Send tasks 
     ↕ Claude Code remote control
 [Sauron AI]  ← always-on tmux window
     ├── spawns → [Worker: personal-website]  ← tmux window
-    ├── spawns → [Worker: SAM-backend]       ← tmux window
+    ├── spawns → [Worker: backend]           ← tmux window
     └── spawns → [Worker: ...]               ← tmux window
 ```
 
